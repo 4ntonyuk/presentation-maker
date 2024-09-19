@@ -3,7 +3,7 @@ export const notFound = (
     <div className="flex gap-9">
       <div className="text-[15px] font-sans">
         <a href="https://www.google.com/">
-          <img src="/logo.png" width={141} height={54} className="select-none" />
+          <img src="/images/logo.png" width={141} height={54} className="select-none" />
         </a>
         <p className="mt-[11px] mb-[22px]">
           <span className="font-semibold">404.</span>&nbsp;
@@ -14,7 +14,7 @@ export const notFound = (
           <span className="text-[#90867d]">That’s all we know.</span>
         </p>
       </div>
-      <img src="/robot.png" className="-mt-7 select-none" />
+      <img src="/images/robot.png" className="-mt-7 select-none" />
     </div>
   </div>
 );
