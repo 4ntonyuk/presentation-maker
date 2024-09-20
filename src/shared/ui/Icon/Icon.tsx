@@ -21,8 +21,13 @@ type Props = {
 
 export function Icon(props: Props) {
   const { className, onClick, type } = props;
+
+
   return (
-    <div className={`${className} ${onClick && "cursor-pointer"}`} onClick={onClick}>
+    <div 
+      className={`select-none hover:bg-[#00000010] rounded-full transition-all duration-300 ${onClick && "cursor-pointer"} ${className}`} 
+      onClick={onClick}
+    >
       <img src={`/icons/${type}.svg`} width={24} height={24} />
     </div>
   );

@@ -4,6 +4,6 @@
 
 @layer components {
   .container {
-    @apply max-w-[1150px] mx-auto my-0;
+    @apply max-w-[1130px] max-[1400px]:max-w-[900px] max-[1100px]:max-w-[670px] mx-auto my-0;
   }
 }

@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Arial"],
+        arial: ["Arial"],
+        ps: ["Product Sans"],
+        gs: ["Google Sans"],
+        roboto: ["Roboto"]
       }
     },
   },

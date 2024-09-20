@@ -1,8 +1,13 @@
 import { Layout } from "@/shared/ui/";
+import { LayoutHeader } from "@/widgets/LayoutHeader";
+import { Templates } from "@/widgets/Templates";
+import { SearchBar } from "@/shared/ui/";
 
 export const baseLayout = (
   <Layout 
-    headerSlot={<div>Header</div>}
-    layoutsSlot={<div>Layouts</div>}
+    headerSlot={<LayoutHeader 
+                  searchbarSlot={<SearchBar />} 
+                />}
+    layoutsSlot={<Templates />}
   />
 );
