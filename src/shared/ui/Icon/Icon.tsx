@@ -12,6 +12,7 @@ type IconType = "apps"
               | "search"
               | "settings"
               | "sort"
+              | "unfold"
 
 type Props = {
   className?: string,
@@ -25,7 +26,7 @@ export function Icon(props: Props) {
 
   return (
     <div 
-      className={`select-none hover:bg-[#00000010] rounded-full transition-all duration-300 ${onClick && "cursor-pointer"} ${className}`} 
+      className={`select-none rounded-full transition-all duration-300 flex-shrink-0 ${onClick && "cursor-pointer hover:bg-[#00000010]"} ${className}`} 
       onClick={onClick}
     >
       <img src={`/icons/${type}.svg`} width={24} height={24} />

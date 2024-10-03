@@ -2,7 +2,7 @@ import { Icon } from "@/shared/ui";
 import { Logo } from "../Logo/Logo";
 
 type Props = {
-  searchbarSlot?: React.ReactNode,
+  searchbarSlot?: Children,
 }
 
 export function LayoutHeader(props: Props) {
@@ -15,7 +15,7 @@ export function LayoutHeader(props: Props) {
       {props.searchbarSlot}
       <div className="min-[1039px]:max-w-[242px] max-w-[100px] w-full flex justify-end">
         <div className="flex items-center gap-3 mr-3">
-          <Icon className="p-2" type="apps" />
+          <Icon className="p-2" type="apps" onClick={() => {}} />
           <div className="w-8 h-8 bg-neutral-300 rounded-full p-2"></div>
         </div>
       </div>
