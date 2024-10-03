@@ -1,12 +1,12 @@
 import { templates } from "@/shared/lib/templates";
-import { LayoutList } from "@/widgets/LayoutList";
+import { TemplateList } from "@/widgets/TemplateList";
 
 export function Main() {
   return (
     <div>
       <div className="bg-[#f2f3f5] w-full">
         <div className="container">
-          <LayoutList 
+          <TemplateList 
             templates={templates}
           />
         </div>

@@ -3,10 +3,6 @@ declare global {
   
   type Action = () => void;
 
-  export type ID = string;
-
-  export type Position = { x: number, y: number };
-
   /*
    * ⚠️ FSD
    *

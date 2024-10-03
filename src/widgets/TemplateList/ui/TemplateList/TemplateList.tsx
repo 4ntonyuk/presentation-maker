@@ -1,12 +1,12 @@
 import { Icon } from "@/shared/ui"
-import { Template } from "@/entities/Template";
-import { TemplateType } from "@/entities/Template/model/types";
+import { Template } from "@/entities/template";
+import { TemplateType } from "@/entities/template/model/types";
 
 type Props = {
   templates: TemplateType[],
 }
 
-export function LayoutList(props: Props) {
+export function TemplateList(props: Props) {
   return (
     <div className="flex flex-col">
       <div className="flex items-center font-gs py-3 mx-2">
@@ -25,7 +25,7 @@ export function LayoutList(props: Props) {
           <Template 
             key={index}
             template={template}
-            className={`${index == 5 && "max-lg:hidden"} ${index == 4 && "max-md:hidden"}`}
+            className={`${template.id == "5" && "max-lg:hidden"} ${template.id == "4" && "max-md:hidden"}`}
           />
         ))}
       </div>

@@ -1,5 +1,7 @@
+import type { ID } from "@/shared/model/types";
+
 export type TemplateType = {
-  id: number,
+  id: ID,
   preview: string,
   title: string,
   author?: string,

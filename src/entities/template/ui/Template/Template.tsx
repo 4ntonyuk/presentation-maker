@@ -1,4 +1,4 @@
-import { TemplateType } from "@/entities/Template/model/types";
+import { TemplateType } from "@/entities/template/model/types";
 
 type Props = {
   template: TemplateType,
