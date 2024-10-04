@@ -15,9 +15,9 @@ const app = ReactDOM.createRoot(
 app.render(
   <React.StrictMode>
     <ReduxProvider store={appStore}>
-      <PersistGate loading={null} persistor={persistedStore}>
+      {/* <PersistGate loading={null} persistor={persistedStore}> */}
         <RouterProvider router={appRouter()} />
-      </PersistGate>
+      {/* </PersistGate> */}
     </ReduxProvider>
   </React.StrictMode>
 );

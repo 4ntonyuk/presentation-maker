@@ -4,7 +4,7 @@ import { Main } from "@/pages/main";
 import { Presentation } from "@/pages/presentation";
 import { baseLayout } from "./layouts/baseLayout";
 import { notFound } from "./layouts/notFound";
-import { layoutWithSidebar } from "./layouts/layoutWithSidebar";
+import { presentationLayout } from "./layouts/presentationLayout";
 
 export function appRouter() {
   return createBrowserRouter([
@@ -19,7 +19,7 @@ export function appRouter() {
       ],
     },
     {
-      element: layoutWithSidebar,
+      element: presentationLayout,
       errorElement: notFound,
       children: [
         {

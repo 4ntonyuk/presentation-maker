@@ -4,6 +4,7 @@ import type { Presentation } from "./types";
 type PresentationSliseState = Presentation;
 
 const initialState: PresentationSliseState = {
+  id: "0",
   title: "Новая презентация",
   slides: [],
   selectedSlides: [],

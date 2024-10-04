@@ -23,10 +23,11 @@ const persistConfig = {
 
 export function makeStore() {
   const store = configureStore({
-    reducer: persistReducer(
-      persistConfig, 
-      rootReducer,
-    ) as unknown as typeof rootReducer,
+    // reducer: persistReducer(
+    //   persistConfig, 
+    //   rootReducer,
+    // ) as unknown as typeof rootReducer,
+    reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({
         serializableCheck: {
