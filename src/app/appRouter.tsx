@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { Main } from "@/pages/main";
+import { Presentation } from "@/pages/presentation";
 import { baseLayout } from "./layouts/baseLayout";
 import { notFound } from "./layouts/notFound";
 import { layoutWithSidebar } from "./layouts/layoutWithSidebar";
@@ -23,7 +24,7 @@ export function appRouter() {
       children: [
         {
           path: "/presentation",
-          element: <div>asd</div>
+          element: <Presentation />
         }
       ]
     }
